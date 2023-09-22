@@ -37,8 +37,8 @@ leftBtn.addEventListener("click", () => {
   }
 });
 
-const aClick = document.querySelectorAll("[data-curValue]");
-aClick.forEach((a) =>
+const btnClick = document.querySelectorAll("[data-curValue]");
+btnClick.forEach((a) =>
   a.addEventListener("click", (e) => {
     e.stopPropagation();
     const curvalue = e.currentTarget.dataset.curvalue;

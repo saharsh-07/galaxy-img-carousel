@@ -17,7 +17,7 @@ html {
 
 .wrapper {
   position: relative;
-  transition: all 1.2s ease-out;
+  transition: all 1.2s ease-in-out;
   display: flex;
 }
 
@@ -54,7 +54,7 @@ html {
   object-fit: cover;
   height: 3rem;
   border-radius: 50%;
-
+  
 }
 
 .planet {
@@ -65,6 +65,7 @@ html {
   grid-template-columns: 30% 70%;
   align-items: center;
   justify-content: center;
+  
 }
 
 .info {
@@ -138,4 +139,17 @@ button{
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+@keyframes rotating {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+
 }
